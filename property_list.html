@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PGLIFE</title>
+    <link rel="stylesheet" type="text/css" href="home.css"/>
+    <link rel="stylesheet" type="text/css" href="property_list.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+    
+</head>
+<body>
+    <div class="logo"> 
+        <a href="home.html"> <img src="logo.png" alt="PGLIFE" width="80" height="50"></a>
+    </div>
+          <nav>
+            <ul>
+                <li><a href="#">signup</a></li>
+                <li><a href="#">login</a></li>
+            </ul>
+          </nav>
+          <br>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="home.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Delhi</li>
+            </ol>
+          </nav>
+          <div class="page-container">
+            <div class="filter-bar row justify-content-around">
+                <div class="col-auto" data-toggle="modal" data-target="#filter-modal">
+                    <img src="filter.png" alt="filter"/>
+                    <span>filter</span>
+
+                </div>
+                <div class="col-auto">
+                    <img src="desc.png" alt="sort-desc">
+                    <span>Highest rent first</span>
+
+                </div>
+                <div class="col-auto">
+                    <img src="asc.png" alt="sort-asc"/>
+                    <span>Lowest rent first</span>
+
+                </div>
+
+            </div>
+
+         </div>
+         <div class="property-card row">
+            <div class="image-container col-md-4">
+                <img src="1d4f0757fdb86d5f.jpg"/>
+
+            </div>
+            <div class="content-container col-md-8">
+                <div class="row no-gutters justify-content-between">
+                    <div class="star-container" title="4.5">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+                    <div class="interested-container">
+                        <i class="fas fa-star"></i>
+                        <div class="interested-text">3 Interested </div>
+
+                    </div>
+                    <div class="detail-container">
+                        <div class="property-name">Jai Paying Guest</div>
+                        <div class="property-address">Mayur Vihar Delhi</div>
+                        <div class="property-gender">
+                            <img src="male.png">
+
+                        </div>
+
+                    </div>
+                    <div class="row no-gutters">
+                        <div class="rent-container col-6">
+                            <div class="rent">6000</div>
+                            <div class="rent-unit">per month </div>
+                        </div>
+                        <div class="button-container col-6">
+                            <a href="property_detail.html" class="btn btn-primary">view</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <div class="property-card row">
+                <div class="image-container col-md-4">
+                    <img src="1d4f0757fdb86d5f.jpg"/>
+
+
+                </div>
+                <div class="content-container col-md-8">
+                    <div class="row no-gutters justify-content-between">
+                        <div class="star-container" title="4.5">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+
+
+                        </div>
+                        <div class="interested-container">
+                            <i class="fas fa-star"></i>
+                            <div class="interested-text">5 Interested</div>
+                        </div>
+                        <div class="detail.container">
+                            <div class="property-name">Om Paying Guest</div>
+                            <div class="property-address">Mayur Vihar Delhi</div>
+                            <div class="property-gender">
+                                <img src="male.png">
+    
+                            </div>
+    
+                        </div>
+                        <div class="row no-gutters">
+                            <div class="rent-container col-6">
+                                <div class="rent">7000</div>
+                                <div class="rent-unit">per month </div>
+                            </div>
+                            <div class="button-container col-6">
+                                <a href="property_detail.html" class="btn btn-primary">view</a>
+    
+                            </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+         </div>
+         <div class="modal fade" id="filter-modal" tabindex="-1" role="dialog" aria-labelledby="filter-heading" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h3 class="modal-title" id="filter-heading">Filters</h3>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <h5>Genders</h5>
+                  <hr/>
+                  <div>
+                    <button class="btn btn-outline-dark btn-active">
+                        No Filters
+                    </button>
+                    <button class="btn btn-outline-dark">
+                        <i class="fas fa-venus-mars"></i>Unisex
+
+                    </button>
+                    <button class="btn btn-outline-dark">
+                        <i class="fas fa-mars"></i>Male
+
+                    </button>
+                    <button class="btn btn-outline-dark">
+                        <i class="fas fa-venus"></i>Female
+
+                    </button>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="page-container footer-container">
+                <div class="footer-cities">
+                    <div class="footer-city">
+                        <a href="property_list.html">Best PG in Delhi</a>
+                    </div>
+                    <div class="footer-city">
+                        <a href="property_list.html">Best PG in Mumbai</a>
+
+                    </div>
+                    <div class="footer-city">
+                        <a href="property_list.html">Best PG in chennai</a>
+
+                    </div>
+                    <div class="footer-city">
+                        <a href="property_list.html">Best PG in Bengalore</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+          </div>
+          <script type="text/javascript" src="js/jquery.js"></script>
+          <script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
